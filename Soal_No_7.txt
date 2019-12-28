@@ -1,0 +1,4 @@
+SELECT pokemon.name AS pokemon_name,( pokemon strength * element multiplier )
+AS modified_strength, element.name AS element_name FROM pokemon INER JOIN element
+ON pokemon.element_id=element.id WHERE ( pokemon strength * element multiplier )
+>= 40 ORDER BY ( pokemon strength * element multiplier) DESC;

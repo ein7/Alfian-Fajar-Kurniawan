@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>No1</title>
+  <meta charset="utf-8">
+  <style>
+  body{
+    background-color: #EDEDED;
+    margin: 50px auto;
+  }
+  input[type=text]{
+    width: 300px;
+    padding: 7px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .label{
+    margin-left: 25px;
+    color: #404040;
+  }
+  .x{
+    width: 350px;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background: #EDEDED;
+  }
+  .info{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 25px;
+    font-size: 20px
+  }
+  .l{
+    color: #fafafa;
+    width: 300px;
+  }
+  .do{
+    width: 90px;
+    padding: 7px 15px;
+    margin-left: 25px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .d{
+    width: 90px;
+    padding: 7px 15px;
+    border: none;
+    margin-left: 11px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .state{
+    width: 300px;
+    padding: 7px 15px;
+    margin-left: 25px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: inline-block;
+  }
+
+</style>
+</head>
+
+<body>
+  <div class="x">
+    <label class="info"><b>Personal</b></label>
+    <hr class="l"/>
+    <p>
+      <label class="label">Name</label><br/>
+      <input type="text" name="nama" value="">
+    </p>
+    <p>
+      <label class="label">Date of Birth</label><br>
+      <div class="date">
+        <select class="do" name="dateofbirth">
+          <option value="Month">Month</option>
+        </select>
+        <select class="d" name="dateofbirth">
+          <option value="Day">Day</option>
+        </select>
+        <select class="d" name="dateofbirth">
+          <option value="Year">Year</option>
+        </select>
+      </div>
+    </p>
+    <p>
+      <label class="label">What is your spirit animal?</label><br/>
+      <input type="text" name="animal" value="">
+    </p>
+
+    <label class="info"><b>Account</b></label>
+    <hr class="l"/>
+    <p>
+      <label class="label">Email</label><br/>
+      <input type="text" name="email" value="">
+    </p>
+    <p>
+      <label class="label">Password</label><br/>
+      <input type="text" name="password" value="">
+    </p>
+    <p>
+      <label class="label">Verify Password</label><br/>
+      <input type="text" name="verify" value="">
+    </p>
+
+    <label class="info"><b>Contact</b></label>
+    <hr class="l"/>
+    <p>
+      <label class="label">Address</label><br/>
+      <input type="text" name="address" value="">
+    </p>
+    <p>
+      <label class="label">City</label><br/>
+      <input type="text" name="city" value="">
+    </p>
+    <p>
+      <label class="label">State</label><br/>
+      <select class="state" name="">
+        <option>-Select your state-</option>
+      </select>
+    </p>
+    <p>
+      <label class="label">Phone</label><br/>
+      <input type="text" name="phone" value="">
+    </p>
+  </div>
+</body>
+
+</html>

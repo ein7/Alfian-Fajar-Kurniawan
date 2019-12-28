@@ -1,0 +1,31 @@
+﻿-Tampilkan masing masing spesifikasi table spesifikasi
+describe users_tb;
+describe skill_tb;
+
+-Tambahkan 1 data user dengan nama “sera”
+INSERT into users_tb (name) VALUES ('Sera');
+
+-Tampilkan seluruh data dari table users
+SELECT*FROM users_tb;
+
+-Tambahkan 5 data kedalam skill_tb : CSS, PHP, LARAVEL, VUE, JAVASCRIPT
+INSERT INTO skill_tb (name) VALUES ('ReactJs'),('HTML'),('React Native');
+
+-Tambahkan skill users dengan nama “haris astina” sebagai berikut: Laravel, PHP, CSS
+update skill_tb set users_id='1' where id=6;
+update skill_tb set users_id='1' where id=5;
+update skill_tb set users_id='1' where id=4;
+
+-Tambahkan skill users dengan nama “Sera” sebagai berikut : ReactJs, Vue, Javascript
+update skill_tb set users_id='1,2,3' where id=1;
+update skill_tb set users_id='3' where id=7;
+update skill_tb set users_id='3' where id=8;
+
+-Tampilkan seluruh data pada skill_tb
+select*from skill_tb;
+
+-Tampilkan seluruh users yang mempunyai skill vue
+select users_tb.name from users_tb inner join skill_tb on users_tb.id=skill_tb.users_id where skill_tb.id=7;
+
+-Gabungkan kedua table tersebut dengan ketentuan tb_userse berada di sebelah kanan dan tb_skill berada di sebelah kiri
+select users_tb.name, skill_tb.name as skill from users_tb inner join skill_tb on users_tb.id=skill_tb.users_id order by users_tb.id;
